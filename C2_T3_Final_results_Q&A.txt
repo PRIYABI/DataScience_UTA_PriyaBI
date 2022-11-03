@@ -1,0 +1,17 @@
+1 - Did any of the algorithms provide reasonable or acceptable results? Why or why not?
+
+
+Regression models that are predicting the default status are having an R2Score of 0 ,this prediction would not work as the column default status is Binary and the result shows that it is disregarding the input features.
+
+Regression models that are predicting limit balance is with R2Score is 0.12 is also close to 0. this score is very low and the model cannot be used for machine learning. This could be because of the lot of entries in Limit balance and the prediction is not very accurate.
+
+So these models are not giving resonable results.
+
+2 - Can this problem be addressed or approached in a different manner that might work better?
+
+I think we should approach this problem using Classification algorithm by binning the limit balance column.
+
+Classification algorithms that are predicting Default status are projecting an accuracy of 80%
+classification algorithms that are predicting Limit balance are projecting accuracy of 62% with 7 bins, 32% with 5 bins
+while predicting default status prooved to be more successful with a high accuracy of around 80%.
+
